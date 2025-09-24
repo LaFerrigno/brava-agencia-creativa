@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Finalizar compra - Diego Torres</title>
+    <link rel="stylesheet" href="../styles/style-commons.css">
+    <link rel="stylesheet" href="../styles/menu-style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/checkout-style.css">
+    <link rel="icon" href="../img/LOGO.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="container">
+        <header class="nav">
+            <h1 class="presentacion">
+                <a href="../index.html">
+                    <img src="../img/Torres-Logo.png" alt="Logo" class="logo">
+                </a>
+            </h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="carrito.html">🛒 <span id="cart-count" class="contador">0</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="checkout-body">
+            <h2>Finalizar Compra</h2>
+            <form id="checkout-form">
+                <h3>Datos del comprador</h3>
+                <label>Nombre y apellido:<input type="text" name="nombre" required></label>
+                <label>Email:<input type="email" name="email" required></label>
+                <label>Dirección:<input type="text" name="direccion" required></label>
+                <label>Ciudad:<input type="text" name="ciudad" required></label>
+                <label>Código postal:<input type="text" name="cp" required></label>
+
+                <h3>Forma de pago</h3>
+                <label><input type="radio" name="pago" value="tarjeta" required> Tarjeta de crédito</label>
+                <label><input type="radio" name="pago" value="transferencia"> Transferencia</label>
+                <label><input type="radio" name="pago" value="mercado-pago"> Mercado Pago</label>
+            </form>
+            <div class="acciones-checkout">
+                <button type="submit" form="checkout-form" class="btn-confirmar">Confirmar compra</button>
+                <div class="medianil"></div>
+                <button class="btn-seguir" onclick="window.location.href='merch.html'">Seguir comprando</button>
+            </div>
+        </main>
+    </div>
+    <script src="../jscript/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

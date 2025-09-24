@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Merch - Diego Torres</title>
+    <link rel="stylesheet" type="text/css"  href="../styles/style-commons.css">
+    <link rel="stylesheet" type="text/css"  href="../styles/menu-style.css">
+    <link rel="stylesheet" type="text/css"  href="../styles/style.css">
+    <link rel="stylesheet" ype="text/css"   href="../styles/merch-style.css">
+    <link rel="stylesheet" hype="text/css"  href="../styles/carrito-style.css">
+    <link rel="icon" href="../img/LOGO.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="container">
+        <div class="nav">
+            <header>
+                <div class="header-container">
+                    <button id="toggle-menu" class="hamburguesa">☰</button>
+                    <h1 class="presentacion">
+                        <a href="#">
+                            <img src="../img/Torres-Logo.png" alt="Logo" class="logo">
+                        </a>
+                    </h1>
+                </div>
+                <!-- Menú de navegación -->
+                <nav class="menu">
+                    <ul>
+                         <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#who">Conocenos</a></li>
+                        <li><a href="../index.html#mision">Mision</a></li>
+                        <li><a href="pages/merch.html">Merch</a></li>
+                        <li><a href="../index.html#servicios">Servicios</a></li>
+                        <li><a href="../index.html#contacto">Contacto</a></li>
+                        <li>
+                            <a href="carrito.html" id="cart-icon">
+                                🛒 <span id="cart-count" class="contador">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="cuerpo">
+            <section id="merch">
+            <h2>Vinilos Oficiales</h2>
+                <div class="grid-productos">
+                        <div class="producto-card">
+                            <img src="../img/merch/MejorQueAyer.png" alt="Vinilo Mejor Que Ayer">
+                            <h3>Mejor que ayer</h3>
+                            <p class="anio">2024</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="../img/merch/AtlanticoAPie.png" alt="Atlantico a pie">
+                            <h3>Atlantico a pie</h3>
+                            <p class="anio">2021</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="../img/merch/Sinfonico.png" alt="Sinfonico">
+                            <h3>Sinfonico</h3>
+                            <p class="anio">2020</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="../img/merch/BuenaVida.png" alt="Buena Vida">
+                            <h3>Buena Vida</h3>
+                            <p class="anio">2015</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="../img/merch/Distinto.png" alt="Distinto">
+                            <h3>Distinto</h3>
+                            <p class="anio">2010</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="../img/merch/Andando.png" alt="Andando">
+                            <h3>Andando</h3>
+                            <p class="anio">2006</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="../img/merch/Unplugged.png" alt="Unplugged">
+                            <h3>Unplugged</h3>
+                            <p class="anio">2004</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="../img/merch/UnMundoDiferente.png" alt="Un mundo diferente">
+                            <h3>Un mundo diferente</h3>
+                            <p class="anio"> 2001</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="../img/merch/TratarDeEstarMejor.png" alt="Tratar de estar mejor">
+                            <h3>Tratar de estar mejor</h3>
+                            <p class="anio"> 1994</p>
+                            <span class="precio">$20.000</span>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+
+                    </div>
+            </section>
+        </div>
+        <div id="carrito" class="carrito hidden">
+            <div class="carrito-contenido">
+            <span class="cerrar-carrito">&times;</span>
+            <h2>Tu Carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <p class="total">Total: $<span id="total">0</span></p>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../jscript/menu.js"></script>
+    <script src="../jscript/carrito.js"></script>
+</body>
+</html>

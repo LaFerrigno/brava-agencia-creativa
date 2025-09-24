@@ -1,0 +1,150 @@
+header {
+    width: 100%;
+    height: 100px; 
+    background-color: #011627;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* separate logo from menu */
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.presentacion {
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentacion img.logo {
+    max-height: 80px; /* Adjust logo size */
+    width: auto;
+    object-fit: contain;
+    margin-left: 100px;
+}
+
+.menu {
+    text-align: right;
+    padding: 5px;
+    width: 0 auto;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-right: 100px;
+    padding: 0;
+    gap: 10px; /* space between buttons */
+}
+
+.menu ul li {
+    list-style: none;
+    width: 160px;
+    /* background-color: #011627; */
+    background-color: #487a1c;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #f6f3ee;
+    font-family: 'Optima-Bold';
+    font-size: 25px;
+    padding: 6px 8px;
+    transition: background-color 0.3s ease;
+    line-height: 2;
+}
+
+.menu ul li a:hover {
+    background-color: #011627; /* lavanda de fondo */
+    color: #f6f3ee; /* beige como texto */
+    border-radius: 10px;
+}
+
+/* Contenedor del logo y hamburguesa */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* Botón hamburguesa oculto por defecto */
+.hamburguesa {
+    display: none;
+    font-size: 28px;
+    background: #f1a5e7;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .hamburguesa {
+        display: block;
+        margin-right: 50px; 
+    }
+    .menu {
+        display: none;
+        width: 100%;
+        background-color: #f1ecc7;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        /*z-index: 99;*/
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+        background: none;
+        border-radius: 0;
+    }
+
+    .menu ul li a {
+        width: 100%;
+        text-align: left;
+        padding: 12px 20px;
+        color: #B5AED6;
+        font-size: 20px;
+        background-color: transparent;
+    }
+
+    .menu ul li a:hover {
+        background-color: #B5AED6;
+        color: #F6E9BB;
+    }
+
+    .header-container {
+        flex-direction: row-reverse;
+        padding: 0 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .logo {
+        max-height: 60px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+}

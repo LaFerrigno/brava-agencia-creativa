@@ -1,0 +1,57 @@
+:root {
+    --background-color: #011627;
+    --container-bkg: #011627;
+    --header-bkg: rgb(255,255,255);
+    --footer-bkg: rgb(248,193,184);
+}
+html{
+	scroll-behavior: smooth;
+}
+body {
+    background-color: #011627; 
+    /*background-image: url('../img/Recital-bkg.jpg'); */ /* Replace with your real image path */
+    background-size: cover;        /* Make it cover the whole screen */
+    background-repeat: no-repeat;  /* Prevent repetition */
+    background-attachment: fixed;  /* So the image stays fixed when scrolling */
+    background-position: center;   /* Center the image nicely */
+    color: rgb(235, 229, 229);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'WarIsOver';
+    src: url(/fonts/WarisOver.ttf);
+}
+
+@font-face {
+    font-family: 'Optima-Black';
+    src: url(/fonts/OptimaLTStd/OptimaLTStd-Black.otf);
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url(/fonts/OptimaLTStd/OptimaLTStd.otf);
+}
+
+@font-face {
+    font-family: 'Optima-Bold';
+    src: url(/fonts/OptimaLTStd/OptimaLTStd-Bold.otf);
+}
+#container{
+    width: auto;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-size: auto;
+    background-attachment: scroll;
+  }
+
+  #container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
