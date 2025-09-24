@@ -228,9 +228,9 @@ label {
 .bton-enviar {
     font-family: 'Optima';
     font-size: 20px;
-    color: rgb(21, 21, 21);
-    background: rgb(240, 251, 227);
-    border: 4px solid rgb(207, 250, 188);
+    color: #011627;
+    background: #ff9f1c;
+    border: 4px solid #ff9f1c;
     border-radius: 50px;
     width: 200px;
     height: 50px;
