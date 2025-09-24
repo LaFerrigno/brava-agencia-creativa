@@ -279,8 +279,11 @@ label {
   .recital-intro img,
   .bio-block-recital img,
   .bio-block img {
+    /* width: 100%;
+    height: auto; */
     width: 100%;
     height: auto;
+    object-fit: contain;
   }
 
   .bio-block,
@@ -348,7 +351,13 @@ label {
     /* width: 100vw; */
   }
   .portfolio{ margin-bottom: 120px; }
-  #galeria{ grid-auto-rows: 200px; gap:16px; }
+  #galeria{ 
+    /* grid-auto-rows: 200px; gap:16px;  */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 16px;
+  }
+  .box:hover img{ transform: none; }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   html, body {
@@ -378,7 +387,7 @@ label {
   position: absolute;
   top: 15px;
   right: 40px; /* ajusta para que no quede cortado */
-  background-color: #f28ab2;
+  background-color: #011627;
   border-radius: 5px;
   color: white;
   padding: 5px 10px;
@@ -394,7 +403,7 @@ label {
   top: 60px !important;
   right: 20px !important;
   width: 200px !important;
-  background: white !important;
+  background: #011627 !important;
   box-shadow: 0 0 10px rgba(0,0,0,0.3) !important;
   padding: 10px 0;
   border-radius: 5px;
@@ -460,8 +469,11 @@ nav.menu {
   .recital-intro img,
   .bio-block-recital img,
   .bio-block img {
-    width: 100%;
+    /*width: 100%;
+    height: auto; */
+    width: 420px;
     height: auto;
+    object-fit: contain;
   }
 
   .bio-block,
@@ -480,8 +492,7 @@ nav.menu {
     text-align: center;
   }
   .portfolio{ margin-bottom: 120px; }
-  #galeria{ grid-auto-rows: 200px; gap:16px; }
-  .input-group > div {
+   .input-group > div {
     flex: 1 1 100%;
   }
 
@@ -500,5 +511,10 @@ nav.menu {
   .album-container .album iframe {
     max-width: 90vw;
     /* width: 100vw; */
+  }
+  #galeria{ 
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 280px;  /* más alto para apreciar mejor */
+    gap: 20px;
   }
 }
